@@ -1,15 +1,19 @@
+import React, { Component } from 'react'
+import Header from './header'
 import './style.css'
+import PersonalSection from './Components/PersonalSection'
+import ExperienceSection from './Components/ExperienceSection'
 
-function App() {
+function App () {
+
   return (
     <div>
-      <header>
-        <p>
-          Project Start!
-        </p>
-      </header>
+      <Header />
+      <PersonalSection />
+      <ExperienceSection />
     </div>
-  );
+  )
 }
 
-export default App;
+
+export default App
