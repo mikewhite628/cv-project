@@ -48,18 +48,18 @@ const PersonalSection = () => {
         display = <PersonalInfo {...{name, position, address, email, phone, github}}/>
 
         return (
-          <div id="personal-section">
+          <div className="personal-section">
             {editOn ? (
               <button
                 onClick={toggleEditing}
-                class="btn btn-icon btn-primary btn-circle btn-fixed"
+                className="personal-btn"
               >
                 <BsX />
               </button>
             ) : (
               <button
                 onClick={toggleEditing}
-                class="btn btn-icon btn-primary btn-circle btn-fixed"
+                className="personal-btn"
               >
                 <BsPencil />
               </button>
